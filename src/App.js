@@ -29,7 +29,6 @@ class App extends Component {
     this.setState(
       update(this.state, {
         cards: {
-          // what is $splice
           $splice: [[dragIndex, 1], [hoverIndex, 0, dragCard]],
         },
       }),
